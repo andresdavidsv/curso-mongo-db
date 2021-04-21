@@ -1,0 +1,14 @@
+certifi==2018.11.29
+Click==7.0
+dnspython==1.16.0
+Flask==1.0.2
+itsdangerous==1.1.0
+Jinja2==2.10
+MarkupSafe==1.1.0
+pymongo==3.7.2
+Werkzeug==0.14.1
+
+
+export FLASK_APP=platzi-api
+export FLASK_ENV=development
+export PLATZI_DB_URI= “mongodb+srv://mongo-admin:4857Mapaz@curso-mongo.pjytn.mongodb.net”
