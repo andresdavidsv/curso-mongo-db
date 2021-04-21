@@ -79,3 +79,6 @@ def borrar_curso_por_id(curso_id):
 
 def consultar_curso_por_id_proyeccion(id_curso, proyeccion=None):
     return db.cursos.find_one({'_id': ObjectId(id_curso)}, proyeccion)
+
+def consultar_curso_por_nombre(nombre):
+    return dumps(db.cursos.find({'$text': {'$search': nombre}}))
